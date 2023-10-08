@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone singer vehicle</title>
+    <link rel="icon"
+        href="https://singervehicledesign.com/wp-content/uploads/singer-vehicle-design-favicon-1-200x200.jpg"
+        sizes="32x32">
+
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+
+            <div class="hamburger-btn">
+                <svg class="hamburger-svg" xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 7.66 5.76">
+                    <line class="b" x1=".5" y1=".55" x2="7.15" y2=".5"></line>
+                    <line class="b" x1=".5" y1="2.91" x2="7.15" y2="2.86"></line>
+                    <line class="b" x1=".5" y1="5.26" x2="7.15" y2="5.21"></line>
+                </svg>
+            </div>
+
+            <a href="#" class="logo-btn ">
+                <svg class="logo-svg " id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 197 67.17">
+                    <path
+                        d="M192.45,24.64s-.98-.02-1.07,.76-.42,.43-3.34,.43c-4.59,.04-9.17-.22-13.73-.77-5.97-.47-7.54,3.81-8.93,7.55-1.28,3.42-2.39,6.14-2.39,6.14,0,0-4.79-1.52-13.84-1.52-4.44,0-5.53-1.87-5.53-1.87,0,0,3.07-1.31,3.07-3.57,0-.95,0-2.45-1.81-2.45-2.19,.34-3.85,2.16-4,4.38,0,.29,.03,.57,.09,.85-.04,.02-.09,.04-.13,.06-5.53,3.35-13.45,8.62-20.59,13.84,0,0,7.53-6.4,7.53-9.36s-2.63-4.6-6.11-5.08h-.02c.38-.23,.62-.63,.66-1.07,0-.9-1.86-3.11-4.7-3.11s-3.31,1.62-3.31,2.73c0,.13,.03,.26,.08,.39l-.17-.03s-2.04,.28-4.29,.67c-2.84,.5-6.11,1.14-6.86,1.14-1.35,0-2.87-2.13-4-2.13-1.45,0-3.38,1.44-4.88,2.52-1.42,1.03-2.44,1.7-2.44,1.7-.07-1.58-.06-3.17,.04-4.74,.17-1.7-.43-2.48-1.48-2.48s-5.27,1.61-13.89,7.53c0,0-.83-.26-.09-2.61s2-5.79,.83-6.57c-.96-.64-11.25,1.78-17.45,3.75-1.87-1.8-4.7-4.35-7.15-6.97-3.05-3.25-5.34-4.9-5.34-7.27,0-1.61,4.08-4.66,9.2-7.62,5.99-3.45,13.49-6.71,18.33-7.15,.09,0,.11,.16,.11,.16-.3,.6-1.79,2.77-7.03,7.43-.46,.29-.59,.9-.3,1.35,.11,.18,.28,.31,.47,.39,.97,.48,2.14,.33,2.96-.38,1.58-1.58,9.23-9.51,7.46-11.29-.93-.93-10.8-.35-20.31,4.64-3.56,1.82-6.95,3.94-10.16,6.33-2.51,1.98-4.32,3.6-4.32,6.56,0,4.69,7.88,8.55,13.08,14.86-3.95,.97-15.11,3.93-26.5,7.05-9.51,2.6-19.2,5.26-24.8,7.53-1.48,.55-2.88,1.29-4.17,2.2C-.21,50.67,.01,51.55,.01,51.55c0,0-.12,.74,1.09,1.09,1.12,.32,3.39,.27,7.53-.48,3.41-.62,12.01-2.06,20.94-4,14.12-3.08,29.75-7.28,32.26-10.49,0,0,2.14-1.71-.5-4.37l12.83-2.96s-2.82,9.66,.73,9.66c2.32,0,4.45-2.61,13.53-6.97,.4-.19,.88-.02,1.08,.38,.05,.1,.08,.22,.08,.33v1.03c-.02,1.9-.14,4.47,1.6,4.47,0,0,.84,.12,2.5-1.16,1.32-1.02,3.36-2.39,4.13-2.9,.17-.11,.4-.07,.52,.09,.53,.67,1.99,2.29,3.85,2.29,2.35,0,4.88-2.12,14.19-2.12s8.66,2.98,8.66,3.42-.39,4.32-11.97,12.33c-5,3.45-8.59,6.5-11.32,8.75-3.59,2.97-5.44,4.67-4.74,5.14,1.22,.83,2.18,1.44,3.4,.87s8.1-5.79,16.93-12.19,15.7-11.88,24.54-17.19c1.09,1.46,3.14,2.65,6.53,2.65,5.57,0,10.71,.52,12.93,1.44s3.22,1.26,3.61,0c.6-2.28,1.37-4.5,2.31-6.66,2.18-4.83,3.09-6.82,8.56-6.4,5.53,.59,11.08,.89,16.65,.91,6.96,0,1.8-3.87,0-3.87h0ZM58.3,36.25c-2.55,2.9-42.94,13.42-52.78,13.73-.09,0-.16-.07-.16-.16,0-.04,.02-.08,.04-.11,3.55-3.83,45.31-13.73,52.46-15.4,.04,.05,.08,.11,.12,.16,0,0,.98,1.02,.32,1.77h0Zm57.66-3.3c-.41-.46,1.22-1.31,1.93-1.31,.7-.08,1.39,.18,1.87,.7,.66,.65-3.8,.6-3.8,.6h0Zm28.9-1.19c0,1.11-1.7,1.65-1.7,1.65,0-1.31,1.7-2.22,1.7-1.66h0Z">
+                    </path>
+
+                </svg>
+            </a>
+
+            <div class="connect-btn">
+                <p>connect</p>
+            </div>
+
+        </nav>
+
+        <div class="menu-container">
+            <!-- left Menu-->
+            <div class="menu__window menu__window--left">
+                <div class="menu__close--btn  menu__close--btn-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <path
+                            d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
+                    </svg>
+                </div>
+
+                <ul class="menu__items--container menu__items--container--left">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">automotive</a></li>
+                    <li><a href="#">timepieces</a></li>
+                    <li><a href="#">ownership</a></li>
+                </ul>
+            </div>
+            <!-- Right Menu -->
+            <div class="menu__window menu__window--right">
+
+                <div class="menu__close--btn  menu__close--btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <path
+                            d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
+                    </svg>
+                </div>
+
+                <ul class="menu__items--container">
+                    <li><a href="#">careers</a></li>
+                    <li><a href="#">partners</a></li>
+                    <li><a href="#">press</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video autoplay muted loop id="video-background">
+                <source src="Video/VEED_home-intro-720.mp4.mp4" type="video/mp4">
+            </video>
+
+            <div class="legacy">
+                <p>since 2009</p>
+                <h1 class="title">defenitive design</h1>
+            </div>
+
+            <div class="scroll-indicator-container">
+                <div class="cant-find-svg"></div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+    </header>
+    <!-- Main Content -->
+    <main>
+        <section class="image-sliders">
+            <div class="first__slider--wrapper slider-wrapper">
+                <div class="first__slider--content slider-content">
+                    <h2 class="title-h2">
+                        a relentless persuit of excelence
+                    </h2>
+
+                    <p class="p-style">
+                        singer is a philosophy, captured in these five words. <br>
+                        we&apos;re driven to present a defenitive version for our chosen subject matter. our ongoing
+                        mission
+                        is to create the ultimate, enduring collection of iconic design
+                    </p>
+                </div>
+
+                <div class="first__slider splide">
+                    <div class="slider__track splide__track">
+                        <div class="slider__list splide__list">
+                            <div class="slide splide__slide">
+                                <img src="images/homepage/carousel-1-1.jpg" alt="">
+                            </div>
+                            <div class="slide splide__slide">
+                                <img src="images/homepage/carousel-1-2.jpg" alt="">
+                            </div>
+                            <div class="slide splide__slide">
+                                <img src="images/homepage/carousel-1-3.jpg" alt="">
+                            </div>
+                            <div class="slide splide__slide">
+                                <img src="images/homepage/carousel-1-4.jpg" alt="">
+                            </div>
+                            <div class="slide splide__slide">
+                                <img src="images/homepage/carousel-1-5.jpg" alt="">
+                            </div>
+                            <div class="slide splide__slide">
+                                <img src="images/homepage/carousel-1-6.jpg" alt="">
+                            </div>
+                            <div class="slide splide__slide">
+                                <img src="images/homepage/carousel-1-7.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__buttons">
+                        <button class="slider__button slider__button--left">
+                            <svg width="180" height="180" viewBox="0 0 180 180" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill=""
+                                style="--wp-dark-mode-inline-fill: none;">
+                                <path
+                                    d="M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z">
+                                </path>
+                            </svg></button>
+                        <button class="slider__button slider__button--right">
+                            <svg class="rotate" width="180" height="180" viewBox="0 0 180 180" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill=""
+                                style="--wp-dark-mode-inline-fill: none;">
+                                <path
+                                    d="M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second__slider--wrapper slider-wrapper">
+                <div class="second__slider--content slider-content">
+                    <h2 class="title-h2">
+                        everything is important
+                    </h2>
+                    <p class="p-style">
+                        success in our mission requires a unique approach. <br>
+                        every detail, no matter how small, must be considered and optimized <br>
+                        these three words are the constant mantra that guides our pursuit of perfection.
+                    </p>
+                </div>
+
+                <div id="second__slider" class="second__slider splide">
+                    <div class="slider__track splide__track">
+                        <div class="slider__list splide__list">
+                            <div class="slide splide__slide"><img src="images/homepage/carousel-2-1.jpg" alt=""></div>
+                            <div class="slide splide__slide"><img src="images/homepage/carousel-2-2.jpg" alt=""></div>
+                            <div class="slide splide__slide"><img src="images/homepage/carousel-2-3.jpg" alt=""></div>
+                            <div class="slide splide__slide"><img src="images/homepage/carousel-2-4.jpg" alt=""></div>
+                            <div class="slide splide__slide"><img src="images/homepage/carousel-2-5.jpg" alt=""></div>
+                            <div class="slide splide__slide"><img src="images/homepage/carousel-2-6.jpg" alt=""></div>
+                            <div class="slide splide__slide"><img src="images/homepage/carousel-2-7.jpg" alt=""></div>
+                            <div class="slide splide__slide"><img src="images/homepage/carousel-2-8.jpg" alt=""></div>
+                            <div class="slide splide__slide"><img src="images/homepage/carousel-2-9.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider__buttons">
+                        <button class="slider__button slider__button--left second__left">
+                            <svg width="180" height="180" viewBox="0 0 180 180" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill=""
+                                style="--wp-dark-mode-inline-fill: none;">
+                                <path
+                                    d="M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z">
+                                </path>
+                            </svg></button>
+                        <button class="slider__button slider__button--right second__right">
+                            <svg class="rotate" width="180" height="180" viewBox="0 0 180 180" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill=""
+                                style="--wp-dark-mode-inline-fill: none;">
+                                <path
+                                    d="M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Luxury and desing carousel  -->
+
+        <section class="secondary-carousels">
+
+            <div class="luxury__carousel">
+                <div class="carousel__content carousel__content--luxury">
+                    <h1 class="title-h2">
+                        luxury <br>
+                        throgh choice
+                    </h1>
+
+
+                    <p class="p-style">
+                        our unique perspective enables special partnerships. <br>
+                        in collaboration with each owner, we focus on what is important to them. <br>
+                        everything that bears the singer name is tailored to a personal vision for luxury.
+                    </p>
+
+                    <div class="content__link">
+                        <a href="#">connect </a>
+                        <svg class="connect-arrow" xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 11.91 7.32">
+                            <line class="c" y1="3.71" x2="11.39" y2="3.68"></line>
+                            <line class="b" x1="8.29" y1=".51" x2="11.39" y2="3.68"></line>
+                            <line class="b" x1="11.39" y1="3.68" x2="8.29" y2="6.81"></line>
+                        </svg>
+
+                    </div>
+
+                </div>
+
+                <div class="luxury__slider--container">
+
+                    <div class="secondary__slider slider__luxury">
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-1.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-2.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-3.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-4.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-5.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-6.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-7.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-8.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-9.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-10.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/luxury-carousel-11.jpg" alt=""></div>
+
+                        <div class="image-slider__buttons">
+                            <button class="image-slider__button image-slider__button--left">
+                                <svg width="180" height="180" viewBox="0 0 180 180" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <button class="image-slider__button image-slider__button--right">
+                                <svg class="rotate" width="180" height="180" viewBox="0 0 180 180" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z">
+                                    </path>
+
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="dots"></div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="design__carousel">
+
+
+                <div class="carousel__content carousel__content--design">
+                    <h1 class="title-h2">
+                        design <br>
+                        to delight
+                    </h1>
+
+
+                    <p class="p-style">
+                        at singer, we love what we do. <br>
+                        we focus to these extreme endeavors for a reason. <br>
+                        defenitive design creates a pleasure for those who encounter it.
+                    </p>
+
+                    <div class="content__link">
+                        <a href="#">connect </a>
+                        <svg class="connect-arrow" xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 11.91 7.32">
+                            <line class="c" y1="3.71" x2="11.39" y2="3.68"></line>
+                            <line class="b" x1="8.29" y1=".51" x2="11.39" y2="3.68"></line>
+                            <line class="b" x1="11.39" y1="3.68" x2="8.29" y2="6.81"></line>
+                        </svg>
+
+                    </div>
+
+                </div>
+
+                <div class="design__slider--container">
+
+                    <div class="secondary__slider slider__design">
+                        <div class="image-slide"><img src="images/homepage/design-to-delight-1.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/design-to-delight-2.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/design-to-delight-3.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/design-to-delight-4.jpg" alt=""></div>
+                        <div class="image-slide"><img src="images/homepage/design-to-delight-5.jpg" alt=""></div>
+
+
+                        <div class="image-slider__buttons">
+                            <button class="image-slider__button image-slider__button--left">
+                                <svg width="180" height="180" viewBox="0 0 180 180" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <button class="image-slider__button image-slider__button--right">
+                                <svg class="rotate" width="180" height="180" viewBox="0 0 180 180" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M119 47.3166C119 48.185 118.668 48.9532 118.003 49.6212L78.8385 89L118.003 128.379C118.668 129.047 119 129.815 119 130.683C119 131.552 118.668 132.32 118.003 132.988L113.021 137.998C112.356 138.666 111.592 139 110.729 139C109.865 139 109.101 138.666 108.436 137.998L61.9966 91.3046C61.3322 90.6366 61 89.8684 61 89C61 88.1316 61.3322 87.3634 61.9966 86.6954L108.436 40.002C109.101 39.334 109.865 39 110.729 39C111.592 39 112.356 39.334 113.021 40.002L118.003 45.012C118.668 45.68 119 46.4482 119 47.3166Z">
+                                    </path>
+
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="dots">
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer__about">
+            <p class="p-style">
+                Singer Group, Inc. (Singer) restores and reimagines 1989 to 1994 Porsche 911s, based on the
+                964 chassis at
+                the direction of its clients. Singer does not manufacture or sell automobiles.</p>
+
+            <p class="p-style"> Singer is not sponsored, associated, approved, endorsed nor, in any way, affiliated with
+                Porsche Cars
+                North
+                America, Inc., or Dr. Ing. h.c.F. Porsche, AG. The Porsche® name and crest, 911® and TARGA® are
+                trademarks
+                of Dr. Ing. h.c.F. Porsche AG, and any other products mentioned are the trademarks of their respective
+                holders. Any mention of trademarked names or other marks is for purpose of reference only. </p>
+
+            <p class="p-style">The product of Singer&apos;s painstaking effort is a Porsche 911 restored and reimagined
+                by
+                Singer. Out of
+                respect for Porsche, and to respect Porsche&apos;s trademark rights, this incredible machine should
+                never
+                under
+                any circumstances be referred to or described as a “Singer,” “Singer 911,” “Singer Porsche 911” or a
+                “Porsche Singer 911,” or in any other manner that suggests that it is anything but a Porsche 911 that
+                has
+                been restored and reimagined by Singer. Privacy Policy
+            </p>
+        </div>
+
+
+
+        <svg class="logo-svg " id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 197 67.17">
+            <path
+                d="M192.45,24.64s-.98-.02-1.07,.76-.42,.43-3.34,.43c-4.59,.04-9.17-.22-13.73-.77-5.97-.47-7.54,3.81-8.93,7.55-1.28,3.42-2.39,6.14-2.39,6.14,0,0-4.79-1.52-13.84-1.52-4.44,0-5.53-1.87-5.53-1.87,0,0,3.07-1.31,3.07-3.57,0-.95,0-2.45-1.81-2.45-2.19,.34-3.85,2.16-4,4.38,0,.29,.03,.57,.09,.85-.04,.02-.09,.04-.13,.06-5.53,3.35-13.45,8.62-20.59,13.84,0,0,7.53-6.4,7.53-9.36s-2.63-4.6-6.11-5.08h-.02c.38-.23,.62-.63,.66-1.07,0-.9-1.86-3.11-4.7-3.11s-3.31,1.62-3.31,2.73c0,.13,.03,.26,.08,.39l-.17-.03s-2.04,.28-4.29,.67c-2.84,.5-6.11,1.14-6.86,1.14-1.35,0-2.87-2.13-4-2.13-1.45,0-3.38,1.44-4.88,2.52-1.42,1.03-2.44,1.7-2.44,1.7-.07-1.58-.06-3.17,.04-4.74,.17-1.7-.43-2.48-1.48-2.48s-5.27,1.61-13.89,7.53c0,0-.83-.26-.09-2.61s2-5.79,.83-6.57c-.96-.64-11.25,1.78-17.45,3.75-1.87-1.8-4.7-4.35-7.15-6.97-3.05-3.25-5.34-4.9-5.34-7.27,0-1.61,4.08-4.66,9.2-7.62,5.99-3.45,13.49-6.71,18.33-7.15,.09,0,.11,.16,.11,.16-.3,.6-1.79,2.77-7.03,7.43-.46,.29-.59,.9-.3,1.35,.11,.18,.28,.31,.47,.39,.97,.48,2.14,.33,2.96-.38,1.58-1.58,9.23-9.51,7.46-11.29-.93-.93-10.8-.35-20.31,4.64-3.56,1.82-6.95,3.94-10.16,6.33-2.51,1.98-4.32,3.6-4.32,6.56,0,4.69,7.88,8.55,13.08,14.86-3.95,.97-15.11,3.93-26.5,7.05-9.51,2.6-19.2,5.26-24.8,7.53-1.48,.55-2.88,1.29-4.17,2.2C-.21,50.67,.01,51.55,.01,51.55c0,0-.12,.74,1.09,1.09,1.12,.32,3.39,.27,7.53-.48,3.41-.62,12.01-2.06,20.94-4,14.12-3.08,29.75-7.28,32.26-10.49,0,0,2.14-1.71-.5-4.37l12.83-2.96s-2.82,9.66,.73,9.66c2.32,0,4.45-2.61,13.53-6.97,.4-.19,.88-.02,1.08,.38,.05,.1,.08,.22,.08,.33v1.03c-.02,1.9-.14,4.47,1.6,4.47,0,0,.84,.12,2.5-1.16,1.32-1.02,3.36-2.39,4.13-2.9,.17-.11,.4-.07,.52,.09,.53,.67,1.99,2.29,3.85,2.29,2.35,0,4.88-2.12,14.19-2.12s8.66,2.98,8.66,3.42-.39,4.32-11.97,12.33c-5,3.45-8.59,6.5-11.32,8.75-3.59,2.97-5.44,4.67-4.74,5.14,1.22,.83,2.18,1.44,3.4,.87s8.1-5.79,16.93-12.19,15.7-11.88,24.54-17.19c1.09,1.46,3.14,2.65,6.53,2.65,5.57,0,10.71,.52,12.93,1.44s3.22,1.26,3.61,0c.6-2.28,1.37-4.5,2.31-6.66,2.18-4.83,3.09-6.82,8.56-6.4,5.53,.59,11.08,.89,16.65,.91,6.96,0,1.8-3.87,0-3.87h0ZM58.3,36.25c-2.55,2.9-42.94,13.42-52.78,13.73-.09,0-.16-.07-.16-.16,0-.04,.02-.08,.04-.11,3.55-3.83,45.31-13.73,52.46-15.4,.04,.05,.08,.11,.12,.16,0,0,.98,1.02,.32,1.77h0Zm57.66-3.3c-.41-.46,1.22-1.31,1.93-1.31,.7-.08,1.39,.18,1.87,.7,.66,.65-3.8,.6-3.8,.6h0Zm28.9-1.19c0,1.11-1.7,1.65-1.7,1.65,0-1.31,1.7-2.22,1.7-1.66h0Z">
+            </path>
+        </svg>
+
+        <div class="footer__nav--container">
+
+            <ul class="footer__nav footer__nav--sitemup">
+                <h6 class="footer-heading">sitemap</h6>
+
+                <li class="p-style"><a href="#">home</a></li>
+                <li class="p-style"><a href="#">automotive</a></li>
+                <li class="p-style"><a href="# ">timepieces</a></li>
+                <li class="p-style"><a href="# ">ownership</a></li>
+            </ul>
+
+            <ul class="footer__nav footer__nav--sitemup">
+                <li class="p-style"><a href="# ">contact us</a></li>
+                <li class="p-style"><a href="# ">partners</a></li>
+                <li class="p-style"><a href="# ">press</a></li>
+                <li class="p-style"><a href="# ">careers</a></li>
+            </ul>
+
+            <ul class="footer__nav footer__nav--legal">
+                <h6 class="footer-heading">legal</h6>
+
+                <li class="p-style"><a href="# ">terms &amp; conditions</a></li>
+                <li class="p-style"><a href="#">privacy policy</a></li>
+                <li class="p-style"><a href="#">cookies</a></li>
+                <li class="p-style"><a href="#">porsche disclaimer</a></li>
+            </ul>
+
+            <ul class="footer__nav footer__nav--social">
+                <h6 class="footer-heading">social</h6>
+
+                <div class="social-wrapper">
+                    <li class="p-style">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                            <path
+                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="p-style">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0,0,256,256">
+                            <g transform="translate(-64,-64) scale(1.5,1.5)">
+                                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(4,4)">
+                                        <path
+                                            d="M31.82031,12c-18.381,0 -19.82031,1.43931 -19.82031,19.82031v0.35938c0,18.381 1.43931,19.82031 19.82031,19.82031h0.35938c18.381,0 19.82031,-1.43931 19.82031,-19.82031v-0.17969c0,-18.548 -1.452,-20 -20,-20zM28,16h8c11.129,0 12,0.871 12,12v8c0,11.129 -0.871,12 -12,12h-8c-11.129,0 -12,-0.871 -12,-12v-8c0,-11.129 0.871,-12 12,-12zM41.99414,20c-1.105,0.003 -1.99714,0.90086 -1.99414,2.00586c0.003,1.105 0.90086,1.99714 2.00586,1.99414c1.105,-0.003 1.99714,-0.90086 1.99414,-2.00586c-0.003,-1.105 -0.90086,-1.99714 -2.00586,-1.99414zM31.97656,22c-5.522,0.013 -9.98956,4.50144 -9.97656,10.02344c0.013,5.522 4.50144,9.98956 10.02344,9.97656c5.522,-0.013 9.98956,-4.50144 9.97656,-10.02344c-0.013,-5.522 -4.50144,-9.98956 -10.02344,-9.97656zM31.98633,26c3.313,-0.008 6.00567,2.67333 6.01367,5.98633c0.007,3.313 -2.67333,6.00567 -5.98633,6.01367c-3.313,0.008 -6.00567,-2.67233 -6.01367,-5.98633c-0.008,-3.313 2.67333,-6.00567 5.98633,-6.01367z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        </svg>
+                    </li>
+                    <li class="p-style">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" w viewBox="0 0 50 50">
+                            <path
+                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                            </path>
+                        </svg>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+</body>
+
+</html>
