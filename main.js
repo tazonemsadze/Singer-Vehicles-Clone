@@ -3,12 +3,12 @@
 // alert(
 //   "this is a clone of the website singervehicles all the credit of design goes to singervehicle group"
 // );
-
 const hamburgerBtn = document.querySelector(".hamburger-btn");
 const connectBtn = document.querySelector(".connect-btn");
 const leftMenu = document.querySelector(".menu__window--left");
 const rightMenu = document.querySelector(".menu__window--right");
 const closeBtn = document.querySelectorAll(".menu__close--btn");
+const menuItems = document.querySelectorAll(".menu__item");
 const overlay = document.querySelector(".overlay");
 
 // Menu JS
@@ -33,14 +33,14 @@ connectBtn.addEventListener("click", () => {
 });
 
 for (let i = 0; i < closeBtn.length; i++) {
-  closeBtn[i].addEventListener("click", () => {
-    closeMenu();
-  });
+  closeBtn[i].addEventListener("click", closeMenu);
 }
 
-overlay.addEventListener("click", () => {
-  closeMenu();
-});
+overlay.addEventListener("click", closeMenu);
+
+for (let i = 0; i < menuItems.length; i++) {
+  menuItems[i].addEventListener("click", closeMenu);
+}
 
 // Nav-scrolled JS
 
@@ -145,7 +145,7 @@ secondPrev.addEventListener("click", () => {
   splide2.go("-1");
 });
 
-// ==================================================================
+// Secondary Sliders
 const createSlider = function (sliderSelector) {
   const sliderElement = document.querySelector(sliderSelector);
   const slides = sliderElement.querySelectorAll(".image-slide");
@@ -209,7 +209,7 @@ const createSlider = function (sliderSelector) {
   const startAutoPlay = function () {
     autoPlayInterval = setInterval(() => {
       nextSlide();
-    }, 3000); // Change slide every 3 seconds
+    }, 3000);
   };
 
   startAutoPlay();
@@ -230,7 +230,7 @@ const createSlider = function (sliderSelector) {
   btnRight.addEventListener("click", nextSlide, stopAutoPlay);
   btnLeft.addEventListener("click", prevSlide, stopAutoPlay);
 
-  // Add event listeners for hover
+  // Add event listeners when hovering
   sliderElement.addEventListener("mouseenter", () => {
     stopAutoPlay();
   });
@@ -254,6 +254,6 @@ const createSlider = function (sliderSelector) {
   });
 };
 
-// Initialize two sliders
+// Initialize sliders
 createSlider(".luxury__slider--container");
 createSlider(".design__slider--container");
